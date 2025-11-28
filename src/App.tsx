@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import Supplies from "./pages/Supplies";
+import ProductDetails from "./pages/ProductDetails";
 import Donate from "./pages/Donate";
 import Nearby from "./pages/Nearby";
 import About from "./pages/About";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/supplies" element={<Supplies />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/nearby" element={<Nearby />} />
           <Route path="/about" element={<About />} />

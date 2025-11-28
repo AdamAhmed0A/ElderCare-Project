@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Heart, Menu, X, Home, Package, Gift, MapPin, Info, User, LogIn } from "lucide-react";
+import { Menu, X, Home, Package, Gift, MapPin, Info, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/Logo";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -17,23 +18,10 @@ export function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm animate-fade-in">
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <Heart className="w-6 h-6 text-primary-foreground" fill="currentColor" />
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-secondary rounded-full flex items-center justify-center">
-                <User className="w-3 h-3 text-secondary-foreground" />
-              </div>
-            </div>
-            <span className="font-display text-2xl font-semibold text-foreground">
-              CareConnect
-            </span>
-          </Link>
+          <Logo size="md" />
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-2">
@@ -42,7 +30,7 @@ export function Navbar() {
                 key={link.name}
                 to={link.href}
                 className={cn(
-                  "px-4 py-2 rounded-lg text-base font-medium transition-all duration-200",
+                  "px-4 py-2 rounded-lg text-base font-medium transition-all duration-300 hover:scale-105",
                   location.pathname === link.href
                     ? "bg-primary/10 text-primary"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
@@ -55,13 +43,13 @@ export function Navbar() {
 
           {/* Desktop Auth Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="ghost" asChild>
+            <Button variant="ghost" asChild className="transition-all duration-300 hover:scale-105">
               <Link to="/auth?mode=login">
                 <LogIn className="w-5 h-5" />
                 Login
               </Link>
             </Button>
-            <Button variant="hero" asChild>
+            <Button variant="hero" asChild className="transition-all duration-300 hover:scale-105">
               <Link to="/auth?mode=signup">Sign Up</Link>
             </Button>
           </div>
