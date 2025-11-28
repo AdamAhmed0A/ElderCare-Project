@@ -49,7 +49,7 @@ export default function About() {
             Dedicated to Improving the Lives of Seniors
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            CareConnect was founded with a simple mission: to ensure every senior has access 
+            ElderCare was founded with a simple mission: to ensure every senior has access 
             to the supplies, support, and community they need to live with dignity and comfort.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function About() {
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 We believe that aging should be a journey filled with support, comfort, and 
-                connection. CareConnect bridges the gap between seniors who need assistance 
+                connection. ElderCare bridges the gap between seniors who need assistance 
                 and the community ready to help.
               </p>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -109,8 +109,8 @@ export default function About() {
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Our Values
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              These core principles guide everything we do at CareConnect.
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              These core principles guide everything we do at ElderCare.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -192,8 +192,8 @@ export default function About() {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <a href="mailto:help@careconnect.org" className="text-muted-foreground hover:text-primary">
-                      help@careconnect.org
+                    <a href="mailto:help@eldercare.org" className="text-muted-foreground hover:text-primary">
+                      help@eldercare.org
                     </a>
                   </div>
                 </div>

@@ -57,7 +57,7 @@ export default function Auth() {
                 </div>
               </div>
               <span className="font-display text-2xl font-semibold text-foreground">
-                CareConnect
+                ElderCare
               </span>
             </Link>
           </div>
@@ -70,7 +70,7 @@ export default function Auth() {
               </h1>
               <p className="text-muted-foreground">
                 {isLogin
-                  ? "Sign in to access your CareConnect account"
+                  ? "Sign in to access your ElderCare account"
                   : "Join our community of caregivers and supporters"}
               </p>
             </div>
