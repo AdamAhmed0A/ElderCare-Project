@@ -173,6 +173,14 @@
     animation: float 6s ease-in-out infinite;
   }
 
+  .animate-bounce-gentle {
+    animation: bounceGentle 2s ease-in-out infinite;
+  }
+
+  .animate-pulse-gentle {
+    animation: pulseGentle 2s ease-in-out infinite;
+  }
+
   .animate-pulse-soft {
     animation: pulseSoft 3s ease-in-out infinite;
   }
